@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+
+    <loc>http://127.0.0.1:5501/index.html</loc>
+    <lastmod>2021-11-22</lastmod>
+</url>
+
+<url>
+
+    <loc>http://127.0.0.1:5501/galeria.html</loc>
+    <lastmod>2021-11-22</lastmod>
+</url>
+
+<url>
+
+    <loc>http://127.0.0.1:5501/sobre%20nosotros.html</loc>
+    <lastmod>2021-11-22</lastmod>
+</url>
+
+<url>
+
+    <loc>http://127.0.0.1:5501/contacto.html</loc>
+    <lastmod>2021-11-22</lastmod>
+</url>
+
+<url>
+
+    <loc>http://127.0.0.1:5501/como%20llegar.html</loc>
+    <lastmod>2021-11-22</lastmod>
+</url>
+
