@@ -470,8 +470,7 @@ body {
  letter-spacing: 7px;
 }
 
-@media screen and (max-width: 640px) {
-   
+@media screen and (max-width: 720px){    
   .comollegar__p{
     font-size: 20px;
     padding: 100px;
@@ -580,8 +579,7 @@ height: 100vh;
   font-weight: bold;
 
 }
-@media screen and (max-width: 640px) {
-
+@media screen and (max-width: 720px){ 
   .sobreNosotros__Texto__nuestrosInicios{
       font-size: 20px;
       padding: 150px; 
@@ -681,8 +679,7 @@ height: 100vh;
   }
 }
 
-@media screen and (max-width: 640px) {
-  .formulario__contacto__texto2 {
+@media screen and (max-width: 720px){   .formulario__contacto__texto2 {
     font-size: 12px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -739,8 +736,7 @@ height: 100vh;
           align-items: center;
 }
 
-@media screen and (max-width: 640px) {
-  #form {
+@media screen and (max-width: 720px){   #form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -996,8 +992,7 @@ textarea {
 
 
 /* RESPONSIVE */
-@media screen and (max-width: 640px) {
-  .equipamientosyservicios {
+@media screen and (max-width: 720px){   .equipamientosyservicios {
     font-size: 16px;
     
   }
