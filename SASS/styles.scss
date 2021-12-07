@@ -1,165 +1,21 @@
 @import './variables';
 @import './mixin';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import './contacto';
+@import './navbar';
+@import './galeria';  
+@import './comollegar';
+@import './sobrenosotros';
 
 body{
     background-color:#D3E4CD;
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
     
   }
 // INICIO
-//   Navbar
- 
 
-.navbar{
-  background-color: #FEF5ED;
-}
-  
-  .navbar__logo{
-      padding: 0;
-    height: 100px;
-    width: 130px;
-   margin-bottom: 20px;
-   
-      
-  }
-  
-  .navbar__button li a{
-      font-size: 12px;
-      margin: 25px;
-      font-weight: 800;
-      font-family: 'Montserrat', sans-serif;
-      text-transform: uppercase;
-  }
-// Abre animaciones botones nav
-
-
-  .navbar__button__inicio{
-    padding-bottom: 1px;
-    color: white;
-    position: relative;
-}
-
-.navbar__button__inicio::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    transform: translateY(3px);
-    background: black;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.navbar__button__inicio:hover::after {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-  .navbar__button__galeria{
-    padding-bottom: 1px;
-    color: white;
-    position: relative;
-}
-
-.navbar__button__galeria::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    transform: translateY(3px);
-    background: black;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.navbar__button__galeria:hover::after {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-.navbar__button__sobreNosotros {
-    padding-bottom: 1px;
-    color: white;
-    position: relative;
-}
-
-.navbar__button__sobreNosotros::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    transform: translateY(3px);
-    background: black;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.navbar__button__sobreNosotros:hover::after {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-.navbar__button__contacto {
-    padding-bottom: 1px;
-    color: white;
-    position: relative;
-}
-
-.navbar__button__contacto::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    transform: translateY(3px);
-    background: black;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.navbar__button__contacto:hover::after {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-.navbar__button__comoLlegar {
-    padding-bottom: 1px;
-    color: white;
-    position: relative;
-}
-
-.navbar__button__comoLlegar::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    transform: translateY(3px);
-    background: black;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-	
-}
-
-.navbar__button__comoLlegar:hover::after {
-    opacity: 1;
-    transform: translateY(0);
-}
-/* Cierra animacion botones nav */
 
 #container {
     color:#999;
@@ -240,497 +96,34 @@ body{
   }
 // CIERRA INICIO
 
-//   GALERIA
-
-.fotosdelaGaleria{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: center;
-	align-items: center;
-    margin-top: 30px;
-}
-
-.fotosGaleria__salon{
-width: 350px;
-height: 350px;
-
-}
-
-
-.fotosGaleria__parrilla{
-	width: 350px;
-	height: 350px;
-	}
-	
-
-.fotosGaleria__pileta{
-	width: 350px;
-	height: 350px;
-	}
-
-.fotosGaleria__cocina{
-	width: 350px;
-	height: 350px;
-}
-//   CIERRA GALERIA
-
-
-// COMO LLEGAR
 
 
 
-.comollegar{
-	text-align: center;
-    margin-top: 70px;
-}
-
-.comollegar__info{
-    text-transform: uppercase;
-}
 
 
 
-.comollegar__texto{
-    font-family: $fontfamily-p;
-    font-weight: $fontweight;
-    font-size: $font-size;
-}
-
-.texto__nuestradireccion{
-    font-size: 25px;
-    font-weight: $fontweight;
-    margin-bottom: 50px;
-}
-
-.googleMaps{
-	display: flex;
-	align-content: center;
-	justify-content: center;
-    width: 100%	;
-    margin-top: 50px;
-    height: 50%;
-    border-radius: 14px;
-}
 
 
 
-.googleMaps iframe{
-    border-radius: 5px;
-}
 
-.wrapper {
-    height: 150px;
-    /*This part is important for centering*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
+
   
-  .typing-demo {
-    width: 30ch;
-    animation: typing 5s steps(22), blink .5s ease-in-out infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 1px solid;
-    font-family:'Montserrat';
-    font-size: 23px;
-    margin-bottom:60px;
-    font-weight: 600;
-    
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
+
+
+
+  // SERVICIOS INICIO
+
+  // @media screen and (max-width: 640px){
+  //   .servicio{
+  //     font-size: 12px;
+  //     width: 95%;
+  //     height: 10px;
+  //     text-align: center;
       
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-
-.comollegar__info{
-	margin-top: 60px;
-	text-align: center;
-
-}
-p a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);    
-}
-
-
-p  :hover{
-    color:  rgba(0, 0, 0, 0.822);
-
-
-}
-// SOBRE NOSOTROS
-
-
-.sobreNosotros__Texto__nuestrosInicios{
-    color:rgba(0, 0, 0, 0.466);
-    text-transform: uppercase;
-    font-size:36px;
-    font-weight:bold;
-    padding: 40px;
-    position:relative;
-    width:100%;
-    display:block;
-    margin-top: 70px;
-      
-}
-
-.sobreNosotros__Texto__info{
-    font-weight: $fontweight;
-    text-transform: uppercase;
-    margin: 50px;
+  //   }
     
-}
-
-
-// Como llegar
-
-.comollegar__titulo{
- 
- padding: 10px;
- 
- 
-
-
- 
-//  #flip2 {
-//     height:50px;
-//     overflow:hidden;
-//   }
   
-//   #flip2 > div > div {
-//     color:rgba(0, 0, 0, 0.925);
-//     padding:4px 12px;
-//     height:45px;
-//     margin-bottom:45px;
-//     display:inline-block;
-//   }
-  
-//   #flip2 div:first-child {
-//     animation: show 1.5s linear  1;
-//   }
-
-//   @keyframes show {
-//     0% {margin-top:-270px;}
-//     5% {margin-top:-180px;}
-//     33% {margin-top:-180px;}
-//     38% {margin-top:-90px;}
-//     66% {margin-top:-90px;}
-//     71% {margin-top:0px;}
-//     99.99% {margin-top:0px;}
-//     100% {margin-top:-270px;}
-//   }
-  
-}
-
-.comollegar__titulo div div a {
-    text-decoration: none;
-    color:rgba(0, 0, 0, 0.466) ;
-    
-}
-
-
-
-  
-  .formulario__contacto__texto{
-    position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 50px;
-    font-size: 25px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat';
-    letter-spacing: 7px;
-    
-  }
-
-  
-  .formulario__contacto__texto2{
-       
-    width: 25ch;
-    animation: typing 5s steps(22), blink .5s ease-in-out infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 1px solid;
-    font-family:'Montserrat';
-    font-size: 23px;
-    margin-bottom:150px;
-    font-weight: 600;
-    margin-right:100px ;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-  
-    
-    .formulario__contacto__texto3{
-       
-        width: 9ch;
-        animation: typing 5s steps(5), blink .5s ease-in-out 1 alternate;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 1px solid;
-        font-family:'Montserrat';
-        font-size: 23px;
-        margin-bottom:150px;
-        font-weight: 600;
-        margin-right:240px;
-
-        
-        
-      }
-      
-      @keyframes typing {
-        from {
-          width: 0
-        }
-      }
-          
-      @keyframes blink {
-        50% {
-          border-color: transparent
-        }
-      }
-    
-      
-      @media screen and (max-width: 600px){
-      
-      .formulario__contacto__texto2{
-        font-size: 12px;
-        display: flex;
-        margin-right: 100px;
-        width: 24ch;
-        text-align: center;
-        vertical-align: middle;
-        }
-
-        .formulario__contacto__texto3{
-          width: 9ch;
-          font-size: 12px; 
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: row;
-          margin-right: 80px;
-      }
-      
-      
-
-      }
-      
-.formulario__contacto__textosocialmedia{
-    display: flex;
-    align-content: center;
-    justify-content:space-around;
-
-
-    
-}
-
-
-
-  #form {
-    position: relative;
-    width: 600px;
-    margin: 50px auto 100px auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  @media screen and (max-width: 600px){
-    #form{
-      display: flex;
-      width: auto;
-      input{
-        width: 300px;
-      }
-
-      textarea{
-        width: 300px;
-      }
-    }
-  }
-
-
-  input {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    width: 700px;
-    height: 50px;
-    padding: 0px 15px 0px 15px;
-    
-    background: transparent;
-    outline: none;
-  
-    
-    border: solid 1px #b3aca7;
-    border-bottom: none;
-    
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-  }
-  
-  input:hover {
-  color: black;
-    
-  }
-  
-  textarea {
-    width: 700px;
-    
-    height: 200px;
-    
-    padding: 15px;
-    
-    background: transparent;
-    outline: none;
-    
-    color: #000000;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    
-    border: solid 1px #b3aca7;
-    
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-  }
-  
-
-  
-  #submit {
-    width: 700px;
-    
-    padding: 0;
-    margin: -5px 0px 0px 0px;
-    
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    
-    
-    outline:none;
-    cursor: pointer;
-    
-    border: solid 1px #b3aca7;
-    border-top: none;
-  }
-  
-  
-  .container__socialMedia{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-53%, -50%);
-  }
-  .social-media {
-      display: flex;
-      padding-bottom: 25px;
-      border-bottom: 1px solid rgba(255, 255, 255, .3);
-      justify-content:space-around; 
-    }
-  
-  .social-media i {
-      position: relative;
-      width: 50px;
-      height: 50px;
-      margin: 0 20px;
-      line-height: 50px;
-      font-size: 28px;
-      text-align: center;
-      z-index: 10;
-      color: #152733;
-      transition: all .5s;
-  }
-  
-  @media screen and (max-width: 600px){
-    
-  }
-  
-  
-
-  .social-media i:hover {
-      color: #c6934b;
-  }
-  
-  .social-media i::after {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      border: 2px solid #152733;
-      transform: rotate(45deg);
-      top: -1px;
-      left: -2px;
-      transition: all .5s ease-in-out;
-      box-shadow: 0 0 50px 10px rgba(24, 42, 54, 0);
-      z-index: -1
-  }
-  
-  .social-media i:hover::after {
-      box-shadow: 0 0 0 0px #152733;
-      background-color: rgba(21, 39, 51, 0.8);
-  }
-  
-  .social-media .media-icon:nth-child(2) i {
-      padding-left: 2px;
-  }  
-
-  .servicio{
-    display:flex;
-    text-decoration: none;
-    list-style-type: none;
-    justify-content: space-around;
-    align-content: center;
-    background-color: white;
-    height: 300px;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-transform: uppercase;
-    
-
-    
-    i{
-      color:rgb(148, 186, 199);
-      height: 40px;
-      width: 25px;
-    }
-
-  }
-
-  @media screen and (max-width: 600px){
-    .servicio{
-      font-size: 12px;
-      width: 95%;
-      height: 50%;
-      text-align: center;
-      
-    }
-  }
   .servicios1{
     display: flex;
     flex-direction: column;
@@ -753,7 +146,7 @@ p  :hover{
   }
 
   .equipamientosyservicios{
-    width: 100%;
+    width: 50%;
     text-align: center;
     margin-bottom: 100px;
     margin-top: 100px;
@@ -774,32 +167,18 @@ p  :hover{
     position: relative;
     padding: 15px;
 
-
-    
   }
 
+
   
-  @media screen and (max-width: 600px){
-    .equipamientosyservicios {
-      font-size: 10px;
-      
-    }
-  }
- 
-  
-  @keyframes shine {
-    0% {
-      background-position-x: -500%;
-    }
-   
-  }
+
 
 
   .servicios3{
-    // display:flex;
+    
     text-decoration: none;
     list-style-type: none;
-    // justify-content: space-around;
+    
     align-content: center;
     background-color: white;
     height: 300px;
@@ -811,33 +190,12 @@ p  :hover{
     
     i{
       color:rgb(148, 186, 199);
-      // height: 40px;
-      // width: 25px;
+      
     }
   }
 
   
   
 
-  // }
-
-  // .servicios__4{
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-around;
-  //   height: 200px;
-  //   flex-wrap: wrap;
-    
-  // }
 
   
-  // .servicios__texto{
-  //   display: flex;
-  //   justify-content:center;
-  //   height: 220px;
-  //   width: 170px;
-  //   align-items: center;
-
-    
-    
-  // }

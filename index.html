@@ -16,6 +16,8 @@
   <!--ACORDATE SIEMPRE DE LINKEAR EL CSS CON ESTE CODIGO-->
   <link rel="stylesheet" href="./CSS/styles.css">
   <!--SI NO ANDA EL CSS, FIJATE QUE ESTE LINKEADO CON EL CODIGO DE ARRIBA-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="icon" href="IMG/kuña.ico">
 
 
@@ -89,7 +91,7 @@
 
 
 
-  <div id="carouselExampleControls" class=" carousel container-fluid slide" data-bs-ride="carousel">
+  <div id="carouselExampleControls" class=" carousel container-fluid slide" data-bs-ride="carousel" data-aos="fade-up-right">
     <div class="carousel-inner ">
       <div class="carousel-item active">
         <img src="./IMG/caretaje (1).jpg" class="d-block w-100 rounded" alt="...">
@@ -117,20 +119,26 @@
   </div>
 
 
-  <h3 class="equipamientosyservicios"><a href="#listaservicios"> Equipamientos & Servicios</a></h3>
+  <h3 class="equipamientosyservicios"><a href="#listaservicios" > Equipamientos & Servicios</a></h3>
 
 
-  <ul class="servicio container" id="listaservicios">
+  <ul class="container servicio " id="listaservicios" data-aos="fade-up"
+  data-aos-duration="3000">
     <div class="servicios1">
       <li>
         <div class="ico">
           <i class="far fa-check-circle"></i>
-          Parrilla cubierta con espacio de Asador.
+          Parrilla cubierta con  asador.
         </div>
 
         <div>
 
-
+          <li class="servicios col-sm-6">
+            <div class="ico">
+              <i class="far fa-check-circle"></i>
+              Wi-Fi
+            </div>
+          </li>
       </li>
 
       <li class="servicios">
@@ -176,72 +184,40 @@
           <i class="far fa-check-circle"></i>
           Tablones forrados, bancos y sillas.
         </div>
-    </div>
-
-    </li>
-  </ul>
-  <!--  -->
-
-
-  <div class="servicios3 container">
-    <div class="row pt-3 text-center">
-      <li class="servicios col-sm-6">
-        <div class="ico">
-          <i class="far fa-check-circle"></i>
-          Pileta
-        </div>
-
-
-      </li>
-
-      <li class="servicios col-sm-6">
-        <div class="ico">
-          <i class="far fa-check-circle"></i>
-          Wi-Fi
-        </div>
-      </li>
-    </div>
-
-
-
-    <!-- <div class="servicios3 container">
-      <div class="row -3 text-center">
-        <li class="servicios col-sm-6">
-          <div class="ico">
-            <i class="far fa-check-circle"></i>
-            Pileta
-          </div>
-  
-  
-        </li>
-  
-        <li class="servicios col-sm-6">
-          <div class="ico">
-            <i class="far fa-check-circle"></i>
-            Wi-Fi
-          </div>
-        </li>
-      </div> -->
-
     
 
-      <div class="servicios__texto">
+    </li>
 
-
-        <li class="servicios text-center ">
-          <div class="ico">
-            <i class="far fa-check-circle"></i>
-            <span> Tenemos plaza blanda para agregar, como servicio extra.</span>
-          </div>
-
-
-        </li>
-
+    <li class="servicios ">
+      <div class="ico">
+        <i class="far fa-check-circle"></i>
+        Pileta
       </div>
 
 
-  </div>
+    </li>
 
+  
+
+    
+   
+
+
+      
+
+    </li>
+  </ul>
+  
+
+
+
+
+
+    
+
+      
+
+  
 
 
 
@@ -315,6 +291,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 
 
 

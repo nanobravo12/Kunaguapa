@@ -1,0 +1,152 @@
+//   Navbar
+ 
+
+.navbar{
+    background-color: #FEF5ED;
+  }
+    
+    .navbar__logo{
+        padding: 0;
+      height: 100px;
+      width: 130px;
+     margin-bottom: 20px;
+     
+        
+    }
+    
+    .navbar__button li a{
+        font-size: 12px;
+        margin: 25px;
+        font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+  // Abre animaciones botones nav
+  
+  
+    .navbar__button__inicio{
+      padding-bottom: 1px;
+      color: white;
+      position: relative;
+  }
+  
+  .navbar__button__inicio::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      transform: translateY(3px);
+      background: black;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .navbar__button__inicio:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  
+    .navbar__button__galeria{
+      padding-bottom: 1px;
+      color: white;
+      position: relative;
+  }
+  
+  .navbar__button__galeria::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      transform: translateY(3px);
+      background: black;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .navbar__button__galeria:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  
+  .navbar__button__sobreNosotros {
+      padding-bottom: 1px;
+      color: white;
+      position: relative;
+  }
+  
+  .navbar__button__sobreNosotros::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      transform: translateY(3px);
+      background: black;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .navbar__button__sobreNosotros:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  
+  .navbar__button__contacto {
+      padding-bottom: 1px;
+      color: white;
+      position: relative;
+  }
+  
+  .navbar__button__contacto::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      transform: translateY(3px);
+      background: black;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .navbar__button__contacto:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  
+  .navbar__button__comoLlegar {
+      padding-bottom: 1px;
+      color: white;
+      position: relative;
+  }
+  
+  .navbar__button__comoLlegar::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      transform: translateY(3px);
+      background: black;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      
+  }
+  
+  .navbar__button__comoLlegar:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  /* Cierra animacion botones nav */
+  

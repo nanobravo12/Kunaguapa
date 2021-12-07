@@ -1,0 +1,83 @@
+// COMO LLEGAR
+
+
+
+
+
+.comollegar__texto{
+    font-family: $fontfamily-p;
+    font-weight: $fontweight;
+    font-size: $font-size;
+}
+
+.texto__nuestradireccion{
+    font-size: 25px;
+    font-weight: $fontweight;
+    margin-bottom: 50px;
+}
+
+
+
+.googleMaps iframe{
+    border-radius: 50px;
+
+}
+
+.wrapper {
+    height: 150px;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 30ch;
+    animation: typing 5s steps(22), blink .5s ease-in-out infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid;
+    font-family:'Montserrat';
+    font-size: 23px;
+    margin-bottom:60px;
+    font-weight: 600;
+    
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+p a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);    
+}
+
+
+p  :hover{
+    color:  rgba(0, 0, 0, 0.822);
+
+
+}
+
+
+
+   @media screen and (max-width: 640px) {
+   
+  .comollegar__p{
+    font-size: 10px;
+
+  }
+  
+  }
+  
+  
