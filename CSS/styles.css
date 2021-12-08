@@ -350,6 +350,7 @@ body {
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
+  
   }
   
   .gallery-image {
@@ -379,14 +380,38 @@ body {
 	}
   }
 
+  @media screen and (max-width: 720px){    
+    .galeria__titulo{
+      padding: 0;
+      margin: 240px 0 240px 0;
+      
+
+    }
+    .gallery-item{
+      width: 80%;
+    }
+
+    .gallery{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .gallery-image{
+      height: 220px;
+      width: 100%;
+    }
+  }
+
 /* CIERRA GALERIA */
 
 .texto__nuestradireccion {
   font-size: 20px;
   font-weight: 900;
   margin-bottom: 50px;
-  line-height: 50px;
-  text-decoration: underline;
+  text-align: center;
+  
   
 }
 
@@ -486,7 +511,7 @@ body {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
-    padding: 100px;
+    
     height: 500px;
     letter-spacing: 5px;
 
@@ -495,16 +520,30 @@ body {
 
   #mapadegoogle{
     width: 90%;
-    height: 500px;
+    height: 400px;
   
   }
 
   
 
   .texto__nuestradireccion{
-    font-size: 18px;
+    margin-bottom: 70px;
+    font-size: 15px;
   }
+
+
+  .comollegar__texto{
+    font-size: 10px;
+    
+    text-align: center;
+    width: 100%;
   }
+
+  .textociudad{
+   font-size: 10px; 
+   margin-top: 50px;
+  }
+}
   
   
   .comollegar__info {
@@ -513,7 +552,6 @@ body {
   text-align: center;
   
   text-transform: uppercase;
-  padding: 100px;
 
 }
 
@@ -581,36 +619,42 @@ height: 100vh;
 }
 @media screen and (max-width: 720px){ 
   .sobreNosotros__Texto__nuestrosInicios{
-      font-size: 20px;
-      padding: 150px; 
+      font-size: 25px;
       letter-spacing: 5px;
       font-weight: 500;
       color: black;
+      text-align: center;
+      padding: 0;
+      height: 200px;
+      margin-top: 230px;
+      
+      
     }
 
     .sobreNosotros__textofinal{
-      font-size: 13px;
-      height: 30px;
+      font-size: 8px;
+      height: 50px;
       text-transform: none;
-      
-      
+      text-align: start;
+        padding: 0;
+      margin-top: 100px;
+      font-style: italic;
     }
 
-    .aboutUs{
-      display:flex;
-      height: 700px;
-      align-content: center;
-      align-items:center;
-      
-    }
+    
 
     .sobreNosotros__Texto__info{
       height: 30px;
-      font-size: 30px;}
+      padding: 0;
+      font-size: 30px;
+      margin: 0;
+    }
 
       .video__sobrenosotros{
-        height: 500px;
-        width: 50%;
+        height: 100vh;
+        width: 170px;
+        padding: 10px;
+        margin-left: 20px;
       }
 }
 
@@ -629,80 +673,34 @@ height: 100vh;
 
 .formulario__contacto__texto2 {
   width: 25ch;
-  -webkit-animation: typing 5s steps(22), blink 0.5s ease-in-out infinite alternate;
-          animation: typing 5s steps(22), blink 0.5s ease-in-out infinite alternate;
-  white-space: nowrap;
   overflow: hidden;
-  border-right: 1px solid;
   font-family: 'Montserrat';
   font-size: 23px;
   margin-bottom: 150px;
   font-weight: 600;
-  margin-right: 100px;
+  
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 
-.formulario__contacto__texto3 {
-  width: 9ch;
-  -webkit-animation: typing 5s steps(5), blink 0.5s ease-in-out 1 alternate;
-          animation: typing 5s steps(5), blink 0.5s ease-in-out 1 alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 1px solid;
-  font-family: 'Montserrat';
-  font-size: 23px;
-  margin-bottom: 150px;
-  font-weight: 600;
-  margin-right: 240px;
-}
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 
 @media screen and (max-width: 720px){   .formulario__contacto__texto2 {
-    font-size: 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 100px;
-    width: 24ch;
+    font-size: 14px;
+   
+   
+    width: 100%;
     text-align: center;
-    vertical-align: middle;
+    
   }
-  .formulario__contacto__texto3 {
-    width: 9ch;
+
+  .texto__entrevista{
+    width: 100%;
     font-size: 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-right: 80px;
+    font-style: italic;
   }
+  
 }
 
 .formulario__contacto__textosocialmedia {
@@ -744,11 +742,12 @@ height: 100vh;
     font-family: 'Montserrat';
   }
   #form input {
-    width: 400px;
+    width: 250px;
   }
   #form textarea {
-    width: 400px;
+    width: 250px;
   }
+ 
 
   .formulario__contacto__texto{
     font-size: 20px;
@@ -759,8 +758,16 @@ height: 100vh;
 
  .social-media{
    margin-bottom: 100px;
+   
  }
-}
+
+
+
+ 
+ }
+
+ 
+
 
 input {
   font-family: 'Lato', sans-serif;
@@ -877,6 +884,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   text-decoration: none;
   list-style-type: none;
   -ms-flex-pack: distribute;
@@ -944,32 +952,13 @@ textarea {
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  background: linear-gradient(170deg, #000, lightblue, #000, #000, lightblue);
   letter-spacing: 5px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  -webkit-animation: shine 5s ease-in-out 1;
-          animation: shine 5s ease-in-out 1;
-  position: relative;
   padding: 15px;
 }
 
 
 
-@-webkit-keyframes shine {
-  0% {
-    background-position-x: -500%;
-  }
-}
 
-@keyframes shine {
-  0% {
-    background-position-x: -500%;
-  }
-}
 
 .servicios3 {
   text-decoration: none;
@@ -992,25 +981,31 @@ textarea {
 
 
 /* RESPONSIVE */
-@media screen and (max-width: 720px){   .equipamientosyservicios {
-    font-size: 16px;
+@media screen and (max-width: 720px){   
+  .equipamientosyservicios {
+    font-size: 14px;
+    
     
   }
 
+  
   .servicio {
-    width: 600px;
-    font-size: 11px;
-    text-align:start ;
+    width:90%;
+    font-size: 8px;
+    height: 250px;
     
     
   }
 
-  .servicios3{
-    width: 500px;
-    font-size: 13px;
-    text-align:start;
+  .servicios2{
+    text-align: center;
+    
+    
   }
-
+.servicios1{
+  text-align:center;
+  
+}
   #container{
     font-size: 30px;
     margin-top: 100px;
